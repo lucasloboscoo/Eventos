@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Eventos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📅 Sistema de Eventos</h1>
+
+  <input type="text" id="titulo" placeholder="Título">
+
+  <input type="text" id="local" placeholder="Local">
+
+  <input type="number" id="vagas" placeholder="Vagas">
+
+  <input type="number" id="preco" placeholder="Preço">
+
+  <input type="date" id="data">
+
+  <textarea id="observacao" placeholder="Observação (opcional)"></textarea>
+
+  <label>
+    Evento ativo?
+    <input type="checkbox" id="ativo">
+  </label>
+
+  <label>
+    Evento cancelado?
+    <input type="checkbox" id="cancelado">
+  </label>
+
+  <input type="text" id="motivoCancelamento" placeholder="Motivo do cancelamento" disabled>
+
+  <button id="btnCadastrar">
+    Cadastrar Evento
+  </button>
+
+  <label for="filtroStatus">Filtrar eventos:</label>
+  <select id="filtroStatus">
+    <option value="todos">Todos</option>
+    <option value="ativos">Ativos</option>
+    <option value="inativos">Inativos</option>
+  </select>
+
+  <div id="listaEventos"></div>
+
+  <div id="estatisticas"></div>
+
+</div>
+
+</body>
+</html>
